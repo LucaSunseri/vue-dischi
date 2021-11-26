@@ -1,0 +1,8 @@
+@import "~@fontsource/lora/index.css";
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+
+body {
+  font-family: $font;
+  color: $font-color;
+}
