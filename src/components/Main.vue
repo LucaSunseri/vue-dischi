@@ -2,7 +2,7 @@
   <main>
     <div class="container">
 
-      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
         <div v-for="(card, index) in cards" :key="index" class="col mb-5">
           <Card :card="card" />
         </div>
