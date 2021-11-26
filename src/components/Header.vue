@@ -25,7 +25,6 @@ header {
 
 .header__left {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-left: 10px;
     img {

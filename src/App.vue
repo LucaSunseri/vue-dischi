@@ -15,7 +15,6 @@ export default {
   components: {
     Header,
     Main,
-
   }
 }
 </script>
@@ -23,5 +22,4 @@ export default {
 <style lang="scss">
 @import "./assets/style/vars.scss";
 @import "./assets/style/general.scss";
-
 </style>

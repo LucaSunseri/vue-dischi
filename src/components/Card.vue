@@ -1,6 +1,8 @@
 <template>
   <div class="ls-card">
+
     <img :src="card.poster" :alt="card.title">
+
     <div class="ls-card__text">
       <h3>{{card.title}}</h3>
       <p>
@@ -8,6 +10,7 @@
         {{card.year}}
       </p>
     </div>
+    
   </div>
 </template>
 
