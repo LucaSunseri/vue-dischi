@@ -4,7 +4,7 @@
       <img src="../assets/img/logo.svg" alt="Logo">
     </div>   
     <div class="header__right">
-      //TODO LUNEDI
+      <!-- TODO LUNEDI -->
     </div>   
   </header>
 </template>
