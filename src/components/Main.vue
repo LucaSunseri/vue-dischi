@@ -2,10 +2,10 @@
   <main>
     <div class="container">
 
-      <Select @filterType="performSearch" class="mb-4"/>
+      <Select @filteredGenres="performSearch" class="mb-4"/>
 
       <div v-if="loading" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-        <div v-for="(card, index) in filteredType" :key="index" class="col mb-5">
+        <div v-for="(card, index) in filteredGenres" :key="index" class="col mb-5">
           <Card :card="card" />
         </div>
       </div>
@@ -40,16 +40,16 @@ export default {
       cards: [],
       loading: false,
       apiUrl: 'https://flynn.boolean.careers/exercises/api/array/music',
-      type: '',
+      genres: null,
     }
   },
     computed:{
-    filteredType(){
-      if(this.type === null){
+    filteredGenres(){
+      if(this.genres === null){
         return this.cards;
       }
       const arrayFiltered = this.cards.filter( item => {
-        return item.genre === this.type;
+        return item.genre === this.genres;
       });
       return arrayFiltered;
     },
@@ -70,8 +70,8 @@ export default {
     },
 
      performSearch(text){
-      this.type = text;
-      console.log(this.type);
+      this.genres = text;
+      console.log(this.genres);
     },
   }
 }
